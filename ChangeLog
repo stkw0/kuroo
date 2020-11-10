@@ -1,0 +1,55 @@
+0.81:
+===================================================================================
+BUGFIXES:
+#61
+#243
+#248
+
+ENHANCEMENTS:
+Solved a glitch wich would show a filter related error when no updates are available.
+fetchrestricted for eclean is not needed unless destructive is used too (solved)
+eclean bug: Does not exists minutes measure. Changing default to hours.
+Added possibility to set custom buffer size in number of lines.
+Removed included SQLite support in favor of a external SQLite library.
+Updated credits of About box
+
+
+Older Versions:
+20-10-06
+Only kdiff3 is supported as merge tool.
+Fix for history view: parsing elog dir after emerge complete.
+Merge view: Now showing all backuped files from /var/cache/kuroo/backup/configuration
+History view: Added button to view elog, and showing this file.
+Add "world" and "queue"-status to inspector.
+New initialization routine: running emerge --info to collect arch, portage version and config protect dir list. 
+View-menu is removed, "Release Information" moved to Help-menu.
+KDE-settings "Show icons on buttons" is now respected.
+Empty package list warning moved up, reformated package name as name (cat/subcat) in queue and history.
+Customizable font for log.
+Added russian translation by Bart.
+Added icons in all rmb's.
+Fixed Ticket #203: Crash On Click Use Flag for portage < 2.1.
+Patch by Schnacki: Dependencies incorrect for portage < 2.1.
+
+13-05-2006
+Settings: Fixed resetting to default all settings.
+LogsTab: text is wrapped at widget boundary.
+Emerge: added Stdin.
+Inspector: New DependencyView class to build tree-view with correct ordering.
+Settings: Fixed make.conf settings: delete all old entries from kuroorc.
+Package summary: Fixed bug in stability check: Not available packages were marked hardmasked.
+Package summary: Added support for depend-atom operator '~'.
+Fixed Ticket #127: Enter should open Inspector.
+Fixed Ticket #123: Package inspector dialog doesn't resize properly when process is running.
+Fixed Ticket #169: resizing package Inspector: fixed resize the grids.
+
+11-04-2006
+Fixed tickets:
+76	24h limit in queue
+95	Improved estimated time remaining	
+132	installing specific version doesn't always work
+172	Take backup of user's portage files when running first time
+173	Warn user if attempting to uninstall system packages!
+174	Kuroo "freezes"
+175	can't emerge	
+142	Queue and statusbar

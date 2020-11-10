@@ -1,0 +1,4 @@
+Check if configuration's defaults works well with change Autoclean and Nocolor to bool values.
+Continue with inlining code.
+Wait for translators to check all translations.
+Check this: !!! --fetch-restricted only makes sense in --destructive mode. (eClean)

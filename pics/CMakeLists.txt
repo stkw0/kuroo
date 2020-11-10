@@ -1,0 +1,51 @@
+#install(FILES  DESTINATION ${KDE_INSTALL_DATADIR}/pics)
+
+ecm_install_icons(ICONS
+    16-apps-kuroo.png
+    16-apps-kuroo_category.png
+    16-apps-kuroo_emerging.png
+    16-apps-kuroo_empty.png
+    16-apps-kuroo_installed_column.png
+    16-apps-kuroo_new.png
+    16-apps-kuroo_package.png
+    16-apps-kuroo_queue.png
+    16-apps-kuroo_queued.png
+    16-apps-kuroo_queued_column.png
+    16-apps-kuroo_quickpkg.png
+    16-apps-kuroo_stable.png
+    16-apps-kuroo_unmerged.png
+    16-apps-kuroo_version_installed.png
+    16-apps-kuroo_warning.png
+    16-apps-kuroo_world.png
+    16-apps-kuroo_world_column.png
+    22-apps-kuroo.png
+    22-apps-kuroo_category.png
+    22-apps-kuroo_emerging.png
+    22-apps-kuroo_find_packages.png
+    22-apps-kuroo_package.png
+    22-apps-kuroo_quickpkg.png
+    22-apps-kuroo_refresh_view.png
+    22-apps-kuroo_view_history.png
+    32-apps-kuroo.png
+    32-apps-kuroo_emerging.png
+    32-apps-kuroo_find_packages.png
+    32-apps-kuroo_makeconf.png
+    32-apps-kuroo_portagefiles.png
+    32-apps-kuroo_refresh_view.png
+    32-apps-kuroo_view_configuration.png
+    32-apps-kuroo_view_history.png
+    32-apps-kuroo_view_log.png
+    32-apps-kuroo_view_queue.png
+    48-apps-kuroo.png
+    48-apps-kuroo_emerging.png
+    48-apps-kuroo_find_packages.png
+    48-apps-kuroo_housekeeping.png
+    48-apps-kuroo_makeconf.png
+    48-apps-kuroo_portagefiles.png
+    48-apps-kuroo_refresh_view.png
+    48-apps-kuroo_view_configuration.png
+    48-apps-kuroo_view_history.png
+    48-apps-kuroo_view_log.png
+    DESTINATION ${KDE_INSTALL_ICONDIR}
+    THEME hicolor
+)

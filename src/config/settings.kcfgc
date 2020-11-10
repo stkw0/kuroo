@@ -1,0 +1,6 @@
+# Code generation options for kconfig_compiler
+File=kurooconfig.kcfg
+ClassName=KurooConfig
+Singleton=true
+Mutators=true
+MemberVariables=private

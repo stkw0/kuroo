@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=System;PackageManager;
+Comment=KDE frontend to Gentoo Portage
+Comment[en_US]=KDE frontend to Gentoo Portage
+Comment[nb]=KDE-grensesnitt for Gentoo Portage
+Comment[es]=Frente gráfico para KDE de Portage
+Comment[fr]=Une application KDE graphique pour Portage
+Exec=kdesu -u root -c kuroo
+GenericName=KDE frontend to Gentoo Portage
+GenericName[en_US]=KDE frontend to Gentoo Portage
+GenericName[nb]=KDE-grensesnitt for Gentoo Portage
+GenericName[es]=Frente gráfico para KDE de Portage
+GenericName[fr]=Une application KDE graphique pour Portage
+Icon=kuroo
+Name=Kuroo
+Name[en_US]=Kuroo
+StartupNotify=true
+Terminal=false
+Type=Application
+X-DBUS-StartupType=Unique

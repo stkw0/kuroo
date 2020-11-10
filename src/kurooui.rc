@@ -1,0 +1,14 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="kuroo" version="1">
+<MenuBar>
+	<Menu name="custom1">
+		<text>&amp;Portage</text>
+		<Action name="sync_portage" />
+		<Action name="refresh_portage" />
+		<Action name="refresh_updates" />
+	</Menu>
+	<Menu name="help">
+		<Action name="information" />
+	</Menu>
+</MenuBar>
+</kpartgui>

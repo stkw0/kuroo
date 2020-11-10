@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Options2</class>
+ <widget class="QDialog" name="Options2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>514</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <layout class="QGridLayout">
+   <property name="margin">
+    <number>3</number>
+   </property>
+   <property name="spacing">
+    <number>3</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="mainTabs">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <widget class="QWidget" name="TabBuild">
+      <attribute name="title">
+       <string>&amp;Build</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox4">
+         <property name="title">
+          <string>Build options</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="0" column="2">
+           <widget class="QComboBox" name="kcfg_Chost">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <item>
+             <property name="text">
+              <string>i386-pc-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>i486-pc-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>i586-pc-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>i686-pc-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>alpha-unknown-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>powerpc-unknown-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>powerpc64-unknown-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>sparc-unknown-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>hppa-unknown-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>hppa1.1-unknown-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>hppa2.0-unknown-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>mips-unknown-linux-gnu</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>x86_64-pc-linux-gnu</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="textLabel3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>CHOST</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QLabel" name="cFlags">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>CFLAGS</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QLabel" name="cFlags_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>CXXFLAGS</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" rowspan="2">
+           <widget class="QTextEdit" name="kcfg_CFlags">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <spacer name="spacer12">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>31</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLineEdit" name="kcfg_CXXFlags"/>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLineEdit" name="kcfg_MakeOpts"/>
+          </item>
+          <item row="4" column="0" colspan="2">
+           <widget class="QLabel" name="makeOpts">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>MAKEOPTS</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2" rowspan="2">
+           <widget class="QTextEdit" name="kcfg_Use">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>USE</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <spacer name="spacer5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>30</width>
+              <height>189</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="spacer15">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>31</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabAdvancedBuild">
+      <attribute name="title">
+       <string>Advan&amp;ced build</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="1" column="0">
+        <spacer name="spacer10">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>21</width>
+           <height>30</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox2_2">
+         <property name="title">
+          <string>Advanced build options</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="kcfg_CBuild"/>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="kcfg_CCacheSize"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="kcfg_BuildPrefix"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="makeOpts_2_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>CBUILD</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="makeOpts_2_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>BUILD_PREFIX</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="makeOpts_2_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>CCACHE_SIZE</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="makeOpts_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>ACCEPT_KEYWORDS</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="kcfg_AcceptKeywords"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="makeOpts_2_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>PORTAGE_NICENESS</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="kcfg_PortageNiceness"/>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLineEdit" name="kcfg_UseOrder"/>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="kcfg_DebugBuild"/>
+          </item>
+          <item row="11" column="0">
+           <widget class="QLabel" name="makeOpts_3_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>NOCOLOR</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QLineEdit" name="kcfg_CleanDelay"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>DEBUGBUILD</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QComboBox" name="kcfg_AutoClean">
+            <item>
+             <property name="text">
+              <string>yes</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>no</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="11" column="1">
+           <widget class="QComboBox" name="kcfg_NoColor">
+            <item>
+             <property name="text">
+              <string>true</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>false</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="makeOpts_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>AUTOCLEAN</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>USE_ORDER</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="makeOpts_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>CLEAN_DELAY</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1" rowspan="2">
+           <widget class="QTextEdit" name="kcfg_Features">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>20</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>32767</width>
+              <height>100</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2_3_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>FEATURES</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <spacer name="spacer9_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>79</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabDirectories">
+      <attribute name="title">
+       <string>D&amp;irectories</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox1">
+         <property name="title">
+          <string>Portage directories</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="7" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_3_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RPMDIR</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QLineEdit" name="kcfg_PortageBinHost"/>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="kcfg_DirRpm"/>
+          </item>
+          <item row="8" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_3_5_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>PORTAGE_BINHOST</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="kcfg_DirPortage"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_3_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>PORTDIR</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_3_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>ROOT</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="kcfg_DirPortageTmp"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_3_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>PORTAGE_TMPDIR</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>PORTDIR_OVERLAY</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="kcfg_DirPortageOverlay"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>PKG_DIR</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>DISTDIR</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>PKG_TMPDIR</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="kcfg_DirDist"/>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="kcfg_DirPkg"/>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="kcfg_Root"/>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="kcfg_DirPkgTmp"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <spacer name="spacer3_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::MinimumExpanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabConfigurations">
+      <attribute name="title">
+       <string>Confi&amp;gurations</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="1" column="0">
+        <spacer name="spacer19">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>5</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox10">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string>Config files in /etc</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="makeOpts_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>CONFIG_PROTECT</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="makeOpts_5_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>CONFIG_PROTECT_MASK</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <spacer name="spacer8_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>10</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <spacer name="spacer11">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>31</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="1" rowspan="2">
+           <widget class="QTextEdit" name="kcfg_ConfigProtectMask">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>20</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" rowspan="2">
+           <widget class="QTextEdit" name="kcfg_ConfigProtect">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>20</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabNetwork">
+      <attribute name="title">
+       <string>&amp;Network</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="2" column="0">
+        <spacer name="spacer9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>21</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title">
+          <string>Download</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="kcfg_HttpProxy"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>HTTP_PROXY</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="kcfg_FtpProxy"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_6_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>FTP_PROXY</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_4_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RESUMECOMMAND</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>FETCHCOMMAND</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="kcfg_ResumeCommand"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="kcfg_FetchCommand"/>
+          </item>
+          <item row="1" column="0">
+           <spacer name="spacer7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>21</width>
+              <height>74</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="1" rowspan="2">
+           <widget class="QTextEdit" name="kcfg_GentooMirrors">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="makeOpts_5_2_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>GENTOO_MIRRORS</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabSync">
+      <attribute name="title">
+       <string>&amp;Sync</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox1_2">
+         <property name="title">
+          <string>Sync</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="2" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RSYNC_PROXY</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="kcfg_RsyncExcludeFrom"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2_6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RSYNC_TIMEOUT</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2_4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>SYNC</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2_4_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RSYNC_RETRIES</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2_2_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RSYNC_EXCLUDEFROM</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="kcfg_RsyncProxy"/>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="kcfg_RsyncTimeOut"/>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="kcfg_RsyncRateLimit"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="textLabel3_2_2_2_2_2_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>RSYNC_RATELIMIT</string>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="kcfg_RsyncRetries"/>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="kcfg_Sync"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="spacer20">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>21</width>
+           <height>5</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabLogging">
+      <attribute name="title">
+       <string>Logging</string>
+      </attribute>
+      <layout class="QVBoxLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox7">
+         <property name="title">
+          <string>Logging Options</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="2" column="0" colspan="2">
+           <widget class="QGroupBox" name="groupBox11">
+            <property name="toolTip">
+             <string>This is the command you want the elog sent through when the 'custom' system is selected.</string>
+            </property>
+            <property name="whatsThis">
+             <string>PORTAGE_ELOG_COMMAND: only used with the &quot;custom&quot; logging module. Specifies a command
+                     to process log messages. Two variables are expanded:
+                         ${PACKAGE} - expands to the cpv entry of the processed
+                                      package (see $PVR in ebuild(5))
+                         ${LOGFILE} - absolute path to the logfile
+                                              Both variables have to be quoted with single quotes</string>
+            </property>
+            <property name="title">
+             <string>ELOG's Custom Command</string>
+            </property>
+            <widget class="QLineEdit" name="kcfg_ElogCustomCmd">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>440</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <property name="toolTip">
+              <string comment="ELOG's &quot;Custom&quot; system command.">This is the command you want the elog sent through when the 'custom' system is selected.</string>
+             </property>
+             <property name="whatsThis">
+              <string>PORTAGE_ELOG_COMMAND: only used with the &quot;custom&quot; logging module. Specifies a command
+                     to process log messages. Two variables are expanded:
+                         ${PACKAGE} - expands to the cpv entry of the processed
+                                      package (see $PVR in ebuild(5))
+                         ${LOGFILE} - absolute path to the logfile
+                                              Both variables have to be quoted with single quotes</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QGroupBox" name="groupBox9">
+            <property name="title">
+             <string>Directories</string>
+            </property>
+            <widget class="QLabel" name="makeOpts_5_2_3_5_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>92</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>PORT_LOGDIR</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="kcfg_DirPortLog">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>20</y>
+               <width>280</width>
+               <height>22</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QGroupBox" name="groupBox8">
+            <property name="title">
+             <string>ELOG Classes</string>
+            </property>
+            <layout class="QGridLayout">
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="kcfg_ElogInfo">
+               <property name="text">
+                <string>In&amp;fo</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="kcfg_ElogLog">
+               <property name="text">
+                <string>Log</string>
+               </property>
+               <property name="shortcut">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="kcfg_ElogError">
+               <property name="text">
+                <string>E&amp;rror</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="kcfg_ElogWarn">
+               <property name="text">
+                <string>&amp;Warn</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QCheckBox" name="kcfg_ElogQa">
+               <property name="text">
+                <string>&amp;QA</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QGroupBox" name="groupBox12">
+            <property name="title">
+             <string>ELOG's Mail Options</string>
+            </property>
+            <widget class="QLabel" name="textLabel1">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>62</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>To URI</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="textLabel2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>50</y>
+               <width>62</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>From URI</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="kcfg_ElogMailURI">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>20</y>
+               <width>360</width>
+               <height>22</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="kcfg_ElogMailFromURI">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>50</y>
+               <width>360</width>
+               <height>22</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="kcfg_ElogSubject">
+             <property name="geometry">
+              <rect>
+               <x>90</x>
+               <y>80</y>
+               <width>360</width>
+               <height>22</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="textLabel3_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>62</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Subject</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="groupBox10_2">
+            <property name="title">
+             <string>ELOG System(s)</string>
+            </property>
+            <widget class="QCheckBox" name="kcfg_ElogSysSave">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>100</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Save</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="kcfg_ElogSysMail">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>100</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Mail</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="kcfg_ElogSysSyslog">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>60</y>
+               <width>100</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Syslog</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="kcfg_ElogSysSaveSum">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>20</y>
+               <width>120</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Save Summary</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="kcfg_ElogSysMailSum">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>40</y>
+               <width>120</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Mail Summary</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="kcfg_ElogSysCustom">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>60</y>
+               <width>100</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>C&amp;ustom</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

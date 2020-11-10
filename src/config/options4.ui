@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Options4</class>
+ <widget class="QDialog" name="Options4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>492</width>
+    <height>396</height>
+   </rect>
+  </property>
+  <widget class="QTabWidget" name="tabWidget2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>474</width>
+     <height>274</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>224</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QWidget" name="TabEclean">
+    <attribute name="title">
+     <string>E&amp;Clean</string>
+    </attribute>
+    <layout class="QVBoxLayout">
+     <item>
+      <widget class="QGroupBox" name="kcfg_EnableEclean">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="whatsThis">
+        <string>Eclean is a tool provided by gentoolkit. It is used to keep the portage directories cleaned up and to prevent unnecessary disk usage.</string>
+       </property>
+       <property name="title">
+        <string comment="Turn eclean on.">Enable Eclean</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <layout class="QHBoxLayout">
+        <item>
+         <layout class="QVBoxLayout">
+          <item>
+           <widget class="QGroupBox" name="groupBox2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>Cleanup Groups</string>
+            </property>
+            <layout class="QGridLayout">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="kcfg_EcleanDistfiles">
+               <property name="toolTip">
+                <string>clean downloaded source files</string>
+               </property>
+               <property name="whatsThis">
+                <string>The distfiles are the collection of source files your computer downloads in order to install something. These files tend to build up over time and should be cleaned out. Selecting this option allows Kuroo to clean them for you.</string>
+               </property>
+               <property name="text">
+                <string>D&amp;istfiles</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="kcfg_EcleanBackups">
+               <property name="toolTip">
+                <string>quickpkg files are included in this</string>
+               </property>
+               <property name="whatsThis">
+                <string>The backup files are your binary package files. These include backups made by Kuroo as well as any packages you have built using &lt;b&gt;quickpkg&lt;/b&gt; (&lt;i&gt;kuroo uses quickpkg to make backups&lt;/i&gt;.) Selecting this option allows Kuroo to cleanup backups that reach a certain age, the age specified in 'Time Limit'.</string>
+               </property>
+               <property name="text">
+                <string>Bac&amp;kup Files</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="spacer32">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="spacer31">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>16</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Options</string>
+          </property>
+          <layout class="QVBoxLayout">
+           <item>
+            <widget class="QCheckBox" name="kcfg_ecleanDestructive">
+             <property name="toolTip">
+              <string>use --destructive for eclean</string>
+             </property>
+             <property name="whatsThis">
+              <string>A destructive eclean leaves only the source files necessary to re-install your system on your hard drive. This is probably the desired eclean as it is the most space concerving method.</string>
+             </property>
+             <property name="text">
+              <string>Destr&amp;uctive</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="kcfg_EcleanFetchRestrict">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="toolTip">
+              <string>Don't clean packages that have fetch restriction in portage.</string>
+             </property>
+             <property name="text">
+              <string>&amp;Fetch Restrict</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout">
+             <item row="0" column="2">
+              <widget class="QLineEdit" name="kcfg_EcleanSizeLimit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="toolTip">
+                <string>max size of ebuild to delete</string>
+               </property>
+               <property name="whatsThis">
+                <string>The size limit is a cap on the distfile sizes you want cleaned up. If you enter 100M for instance Kuroo won't auto-clean any file larger than 100M in size. This is useful if you have a slow internet connection and never want to download that big file again.&lt;br&gt;&lt;i&gt;Man eclean for more info&lt;/i&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="kcfg_EcleanTimeLimit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="toolTip">
+                <string>protect files less than this old</string>
+               </property>
+               <property name="whatsThis">
+                <string>Time limit is useful for protecting files that are less than the specified age. If you insert 1m Kuroo will not delete a file that is newer than one month old. This value is useful both for distfiles and for backup files. You should have this value set.</string>
+               </property>
+               <property name="text">
+                <string>1h</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <spacer name="spacer15">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>46</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="1">
+              <spacer name="spacer14">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Expanding</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>52</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="textLabel2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Time Limit</string>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="textLabel1_2">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Size Limit</string>
+               </property>
+               <property name="wordWrap">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="spacer34">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="TabRevdepRebuild">
+    <attribute name="title">
+     <string>Revdep Re&amp;build</string>
+    </attribute>
+    <layout class="QGridLayout">
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="kcfg_revdepEnabled">
+       <property name="title">
+        <string>Revdep Rebuild</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <layout class="QGridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="textLabel1">
+          <property name="text">
+           <string>With revdep-rebuild enabled your system will run the revdep-rebuild utility following an emerge to ensure library consistency. This takes a lot of time and may not be desirable every time you emerge.</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignVCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <spacer name="spacer6">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

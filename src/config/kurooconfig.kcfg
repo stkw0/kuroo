@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE kcfg SYSTEM "http://www.kde.org/standards/kcfg/1.0/kcfg.dtd"> 
+<kcfg>
+	<kcfgfile name="kuroorc"/>
+	<group name="general">
+		<entry name="portageVersion21" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="saveLog" type="Bool">
+		</entry>
+		<entry name="verboseLog" type="Bool">
+		</entry>
+		<entry name="updateDeep" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="updateBuilddeps" type="Bool">
+		        <default>false</default>
+		</entry>
+		<entry name="updateNewUse" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="updateDependency" type="Bool">
+			<default>true</default>
+		</entry>
+		<entry name="updateTree" type="Bool">
+		</entry>
+		<entry name="installedColumn" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="isSystrayEnabled" type="Bool">
+			<default>true</default>
+		</entry>
+		<entry name="init" type="Bool">
+		</entry>
+		<entry name="wizard" type="Bool">
+		</entry>
+		<entry name="viewUnmerges" type="Bool">
+		</entry>
+		<entry name="version" type="String">
+		</entry>
+		<entry name="hardVersion" type="String">
+		</entry>
+		<entry name="databas" type="String">
+			<default>portage.db</default>
+		</entry>
+		<entry name="FileHistoryBackup" type="String">
+			<default>history.bak</default>
+		</entry>
+		<entry name="FileMergeBackup" type="String">
+			<default>merge.bak</default>
+		</entry>
+		<entry name="DirDbPkg" type="String">
+			<default>/var/db/pkg</default>
+		</entry>
+		<entry name="DirEdbDep" type="String">
+			<default>/var/cache/edb/dep</default>
+		</entry>
+		<entry name="DirELog" type="String">
+			<default>/var/log/portage/elog</default>
+		</entry>
+		<entry name="Arch" type="String">
+		</entry>
+		<entry name="ConfigProtectList" type="String">
+		</entry>
+		<entry name="DirMakeProfile" type="String">
+			<default>/etc/make.profile</default>
+		</entry>
+		<entry name="FileArchList" type="String">
+			<default>/usr/portage/profiles/arch.list</default>
+		</entry>
+		<entry name="FileWorld" type="String">
+			<default>/var/lib/portage/world</default>
+		</entry>
+		<entry name="FileMakeConf" type="String">
+			<default>/etc/make.conf</default>
+		</entry>
+		<entry name="FilePackageUserUnMask" type="StringList">
+			<!--<default>/etc/portage/package.unmask</default>-->
+		</entry>
+		<entry name="FilePackageKeywords" type="StringList">
+			<!--<default>/etc/portage/package.keywords</default>-->
+		</entry>
+		<entry name="FilePackageUserMask" type="StringList">
+			<!--<default>/etc/portage/package.mask</default>-->
+		</entry>
+		<entry name="FilePackageHardMask" type="String">
+			<default>/usr/portage/profiles/package.mask</default>
+		</entry>
+		<entry name="FilePackageUserUse" type="StringList">
+			<!--<default>/etc/portage/package.use</default>-->
+		</entry>
+		<entry name="DefaultFilePackageUserUnMask" type="String">
+			<default></default>
+		</entry>
+		<entry name="DefaultFilePackageKeywords" type="String">
+			<default></default>
+		</entry>
+		<entry name="DefaultFilePackageUserMask" type="String">
+			<default></default>
+		</entry>
+		<entry name="DefaultFilePackageUserUse" type="String">
+			<default></default>
+		</entry>
+		<entry name="FileEmergeLog" type="String">
+			<default>/var/log/emerge.log</default>
+		</entry>
+		<entry name="etcUpdateTool" type="String">
+			<default>kdiff3</default>
+		</entry>
+		<entry name="matchColor" type="Color">
+			<default>126, 255, 112</default>
+		</entry>
+		<entry name="noMatchColor" type="Color">
+			<default>255, 159, 144</default>
+		</entry>
+		<entry name="logFont" type="Font">
+		</entry>
+		<entry name="logLines" type="Int">
+			<default>2000</default>
+		</entry>
+		<entry name="EnableEclean" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="EcleanDistfiles" type="Bool">
+			<default>true</default>
+		</entry>
+		<entry name="EcleanBackups" type="Bool">
+			<default>true</default>
+		</entry>
+		<entry name="EcleanFetchRestrict" type="Bool">
+			<default>true</default>
+		</entry>
+		<entry name="EcleanSizeLimit" type="String">
+			<default>0</default>
+		</entry>
+		<entry name="EcleanTimeLimit" type="String">
+			<default>1h</default>
+		</entry>
+		<entry name="ecleanDestructive" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="revdepEnabled" type="Bool">
+			<default>false</default>
+		</entry>
+	</group>
+	<group name="queue">
+		<entry name="forceConf" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="download" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="noWorld" type="Bool">
+			<default>true</default>
+		</entry>
+		<entry name="remove" type="Bool">
+			<default>false</default>
+		</entry>
+		<entry name="backupPkg" type="Bool">
+			<default>false</default>
+		</entry>
+	</group>
+	<group name="warnings">
+		<entry name="etcFiles" type="String">
+			<default>/etc/make.conf /etc/portage/make.conf /etc/securetty /etc/rc.conf /etc/fstab /etc/hosts /etc/conf.d/hostname /etc/conf.d/domainname /etc/conf.d/net /etc/X11/XF86Config /etc/X11/xorg.conf /etc/modules.conf /boot/grub/grub.conf /boot/lilo/lilo.conf ~/.xinitrc</default>
+		</entry>
+		<entry name="systemFiles" type="String">
+			<default>app-arch/bzip2 app-arch/cpio app-arch/tar app-shells/bash dev-lang/perl dev-lang/python net-misc/iputils net-misc/rsync net-misc/wget sys-apps/coreutils sys-apps/debianutils sys-apps/diffutils sys-apps/file sys-apps/findutils sys-apps/gawk sys-apps/grep sys-apps/groff sys-apps/kbd sys-apps/net-tools sys-apps/portage sys-process/procps sys-process/psmisc sys-apps/sed sys-apps/shadow sys-apps/texinfo sys-apps/which sys-devel/autoconf sys-devel/autoconf-wrapper sys-devel/automake sys-devel/automake-wrapper sys-devel/binutils sys-devel/bison sys-devel/flex sys-devel/gcc sys-devel/gnuconfig sys-devel/libtool sys-devel/m4 sys-devel/mak sys-devel/patch sys-fs/e2fsprogs sys-libs/cracklib sys-libs/ncurses sys-libs/readline sys-libs/zlib virtual/dev-manager virtual/editor virtual/gzip virtual/libc virtual/man virtual/modutils virtual/os-headers virtual/pager virtual/ssh</default>
+		</entry>
+	</group>
+	<group name="make.conf">
+		<entry name="AcceptKeywords" type="String">
+		</entry>
+		<entry name="AutoClean" type="Bool">
+		</entry>
+		<entry name="BuildPrefix" type="String">
+		</entry>
+		<entry name="CBuild" type="String">
+		</entry>
+		<entry name="CCacheSize" type="String">
+		</entry>
+		<entry name="CFlags" type="String">
+		</entry>
+		<entry name="CXXFlags" type="String">
+		</entry>
+		<entry name="Chost" type="String">
+		</entry>
+		<entry name="CleanDelay" type="String">
+		</entry>
+		<entry name="ConfigProtect" type="String">
+		</entry>
+		<entry name="ConfigProtectMask" type="String">
+		</entry>
+		<entry name="DebugBuild" type="String">
+		</entry>
+		<entry name="DirDist" type="String">
+		</entry>
+		<entry name="ElogWarn" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogError" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogLog" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogInfo" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogQa" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogSysSave" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogSysMail" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogSysSyslog" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogSysCustom" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogSysSaveSum" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogSysMailSum" type="Bool"><default>false</default>
+		</entry>
+		<entry name="ElogMailURI" type="String">
+		</entry>
+		<entry name="ElogMailFromURI" type="String">
+		</entry>
+		<entry name="ElogSubject" type="String">
+		</entry>
+		<entry name="ElogCustomCmd" type="String">
+		</entry>
+		<entry name="Features" type="String">
+		</entry>
+		<entry name="FetchCommand" type="String">
+		</entry>
+		<entry name="GentooMirrors" type="String">
+		</entry>
+		<entry name="HttpProxy" type="String">
+		</entry>
+		<entry name="FtpProxy" type="String">
+		</entry>
+		<entry name="MakeOpts" type="String">
+		</entry>
+		<entry name="NoColor" type="Bool">
+		</entry>
+		<entry name="DirPkgTmp" type="String">
+		</entry>
+		<entry name="DirPkg" type="String">
+		</entry>
+		<entry name="DirPortLog" type="String">
+		</entry>
+		<entry name="PortageBinHost" type="String">
+		</entry>
+		<entry name="PortageNiceness" type="String">
+		</entry>
+		<entry name="DirPortageTmp" type="String">
+		</entry>
+		<entry name="DirPortage" type="String">
+		</entry>
+		<entry name="DirPortageOverlay" type="String">
+		</entry>
+		<entry name="ResumeCommand" type="String">
+		</entry>
+		<entry name="Root" type="String">
+		</entry>
+		<entry name="RsyncExcludeFrom" type="String">
+		</entry>
+		<entry name="RsyncProxy" type="String">
+		</entry>
+		<entry name="RsyncRetries" type="String">
+		</entry>
+		<entry name="RsyncRateLimit" type="String">
+		</entry>
+		<entry name="RsyncTimeOut" type="String">
+		</entry>
+		<entry name="DirRpm" type="String">
+		</entry>
+		<entry name="Sync" type="String">
+		</entry>
+		<entry name="Use" type="String">
+		</entry>
+		<entry name="UseOrder" type="String">
+		</entry>
+	</group>
+</kcfg>

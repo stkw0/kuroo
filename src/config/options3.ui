@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Options3</class>
+ <widget class="QWidget" name="Options3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>408</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <layout class="QGridLayout">
+   <property name="margin">
+    <number>5</number>
+   </property>
+   <item row="0" column="0" colspan="2">
+    <widget class="KTextEdit" name="kcfg_etcFiles"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>KTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>ktextedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local">ktextedit.h</include>
+ </includes>
+ <resources/>
+ <connections/>
+</ui>

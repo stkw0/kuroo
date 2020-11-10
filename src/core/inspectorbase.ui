@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InspectorBase</class>
+ <widget class="QWidget" name="InspectorBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>609</width>
+    <height>463</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>32767</width>
+    <height>32767</height>
+   </size>
+  </property>
+  <layout class="QGridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="topFrame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Ignored" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <layout class="QGridLayout">
+      <property name="margin">
+       <number>5</number>
+      </property>
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <item row="2" column="0">
+       <widget class="QLabel" name="description">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Package</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+        <property name="margin">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QFrame" name="headerFrame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QGridLayout">
+         <property name="margin">
+          <number>2</number>
+         </property>
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QGridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="package">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>textLabel1</string>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+             <property name="margin">
+              <number>2</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="spacer17">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::MinimumExpanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="cbQueue">
+             <property name="text">
+              <string>In Install Queue</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QCheckBox" name="cbWorld">
+             <property name="text">
+              <string>In World</string>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QPushButton" name="pbPrevious">
+             <property name="toolTip">
+              <string>Previous Package</string>
+             </property>
+             <property name="text">
+              <string>&lt;&lt;</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QPushButton" name="pbNext">
+             <property name="toolTip">
+              <string>Next Package</string>
+             </property>
+             <property name="text">
+              <string>&gt;&gt;</string>
+             </property>
+             <property name="shortcut">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTabWidget" name="inspectorTabs">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="TabVersions">
+      <attribute name="title">
+       <string>Versi&amp;ons</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <item row="0" column="0">
+        <layout class="QGridLayout">
+         <item row="0" column="0">
+          <widget class="KButtonGroup" name="groupVersionsView">
+           <property name="maximumSize">
+            <size>
+             <width>32767</width>
+             <height>32767</height>
+            </size>
+           </property>
+           <property name="title">
+            <string>Available Versions for this package:</string>
+           </property>
+           <layout class="QGridLayout">
+            <property name="margin">
+             <number>3</number>
+            </property>
+            <property name="spacing">
+             <number>3</number>
+            </property>
+            <item row="1" column="0">
+             <widget class="QLabel" name="pixmapEmerge">
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>image0</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>false</bool>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="4">
+             <widget class="VersionView" name="versionsView" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="textLabel3_2">
+              <property name="text">
+               <string>Emerge version</string>
+              </property>
+              <property name="wordWrap">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <spacer name="spacer13">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>16</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="1" column="3">
+             <widget class="KUrlLabel" name="infoHardMasked"/>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="KButtonGroup" name="groupSelectStability">
+           <property name="whatsThis">
+            <string>When you want to install a package that isn't available for your system, you will receive this masking error. You should try installing a different application that is available for your system or wait until the package is put available. There is always a reason why a package is masked:
+
+    * ~arch keyword means that the application is not tested sufficiently to be put in the stable branch. Wait a few days or weeks and try again.
+    * -arch keyword or -* keyword means that the application does not work on your architecture. If you believe the package does work file a bug at our bugzilla website.
+    * missing keyword means that the application has not been tested on your architecture yet. Ask the architecture porting team to test the package or test it for them and report your findings on our bugzilla website.
+    * package.mask means that the package has been found corrupt, unstable or worse and has been deliberately marked as do-not-use.
+    * profile means that the package has been found not suitable for your profile. The application might break your system if you installed it or is just not compatible with the profile you use.
+</string>
+           </property>
+           <layout class="QGridLayout">
+            <property name="margin">
+             <number>5</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="rbStable">
+              <property name="text">
+               <string>Stab&amp;le Version</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QRadioButton" name="rbTesting">
+              <property name="text">
+               <string>Testi&amp;ng Version</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QRadioButton" name="rbMasked">
+              <property name="text">
+               <string>Mas&amp;ked Version</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <layout class="QGridLayout">
+              <item row="2" column="1">
+               <widget class="QComboBox" name="cbVersionsSpecific">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="insertPolicy">
+                 <enum>QComboBox::InsertAtTop</enum>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Select Version</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <spacer name="spacer20">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>13</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0" colspan="3">
+               <widget class="QRadioButton" name="rbVersionsSpecific">
+                <property name="text">
+                 <string>Install onl&amp;y specific version 
+and do not update further</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="3">
+               <widget class="Line" name="line1">
+                <property name="frameShape">
+                 <enum>QFrame::HLine</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Plain</enum>
+                </property>
+                <property name="lineWidth">
+                 <number>1</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <spacer name="spacer19">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>10</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabUse">
+      <attribute name="title">
+       <string>&amp;Use Flags</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QGridLayout">
+         <item row="1" column="0" colspan="2">
+          <widget class="QLabel" name="t1_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Add or Remove Use Flags support:</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="pbUse">
+           <property name="toolTip">
+            <string>Previous Package</string>
+           </property>
+           <property name="text">
+            <string>C&amp;alculate Use Flags</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <spacer name="spacer15">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="cbVersionsUse">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="insertPolicy">
+            <enum>QComboBox::InsertAtTop</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2" colspan="2">
+          <spacer name="spacer10_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>21</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="textLabel5_2_3">
+           <property name="text">
+            <string>Select version:</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="QTreeWidget" name="useView">
+         <attribute name="headerVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Use</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabChangeLog">
+      <attribute name="title">
+       <string>Ch&amp;angeLog</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="changelogBrowser"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabEbuild">
+      <attribute name="title">
+       <string>E&amp;build</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QGridLayout">
+         <item row="0" column="1">
+          <widget class="QComboBox" name="cbVersionsEbuild">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QTextBrowser" name="ebuildBrowser"/>
+         </item>
+         <item row="0" column="2">
+          <spacer name="spacer10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>21</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="textLabel5_2">
+           <property name="text">
+            <string>Select version:</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabDependencies">
+      <attribute name="title">
+       <string>Dependencies</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QGridLayout">
+         <item row="1" column="0" colspan="3">
+          <widget class="DependencyView" name="dependencyView" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="cbVersionsDependencies">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="insertPolicy">
+            <enum>QComboBox::InsertAtTop</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="textLabel5_2_2">
+           <property name="text">
+            <string>Select version:</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <spacer name="spacer10_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>390</width>
+             <height>21</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="TabInstalledFiles">
+      <attribute name="title">
+       <string>I&amp;nstalled Files</string>
+      </attribute>
+      <layout class="QGridLayout">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0">
+        <layout class="QGridLayout">
+         <item row="0" column="2">
+          <spacer name="spacer10_2_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>21</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QTextBrowser" name="installedFilesBrowser"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="textLabel5_2_2_2">
+           <property name="text">
+            <string>Select version:</string>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="cbVersionsInstalled">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="insertPolicy">
+            <enum>QComboBox::InsertAtTop</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>KButtonGroup</class>
+   <extends>QGroupBox</extends>
+   <header>kbuttongroup.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>KUrlLabel</class>
+   <extends>QLabel</extends>
+   <header>kurllabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VersionView</class>
+   <extends>QWidget</extends>
+   <header>versionview.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DependencyView</class>
+   <extends>QWidget</extends>
+   <header>dependencyview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local">versionview.h</include>
+  <include location="local">kurllabel.h</include>
+  <include location="local">dependencyview.h</include>
+  <include location="local">ktextbrowser.h</include>
+ </includes>
+ <resources/>
+ <connections/>
+</ui>
